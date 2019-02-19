@@ -173,7 +173,9 @@ class Element {
 }
 
 export function render(element, parent) {
-    element.appendTo(parent);
+    const fragment = document.createDocumentFragment();
+    element.appendTo(fragment);
+    parent.appendChild(fragment);
     element._componentDidMount();
 }
 
