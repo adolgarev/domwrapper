@@ -38,7 +38,10 @@ class Element {
     appendTo(parent) {
         this._element = document.createElement(this._tagName);
         for (let key of Object.keys(this._attributes)) {
-            this._element[key] = this._attributes[key];
+            if (key === "class")
+                this._element.setAttribute(key, this._attributes[key]);
+            else
+                this._element[key] = this._attributes[key];
         }
         for (let eventListener of this._eventListeners) {
             this._element.addEventListener(...eventListener);
