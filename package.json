@@ -5,7 +5,7 @@
     "url": "https://github.com/adolgarev/domwrapper.git"
   },
   "version": "1.0.3",
-  "description": "",
+  "description": "Implements builder pattern on top of DOM API for convenience",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
