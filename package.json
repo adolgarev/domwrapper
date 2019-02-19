@@ -1,15 +1,21 @@
 {
   "name": "@adolgarev/domwrapper",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/adolgarev/domwrapper.git"
+    "type": "git",
+    "url": "https://github.com/adolgarev/domwrapper.git"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1"
+  }
 }
