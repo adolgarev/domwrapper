@@ -1,5 +1,5 @@
 {
-  "name": "domwrapper",
+  "name": "@adolgarev/domwrapper",
   "repository": {
     "type" : "git",
     "url" : "https://github.com/adolgarev/domwrapper.git"
